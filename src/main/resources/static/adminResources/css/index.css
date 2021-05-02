@@ -1,0 +1,60 @@
+.main-content{
+	padding: 40px;
+	//padding-left: 50px;
+}
+.background{
+	width: 90vw;
+	height: 70vh;
+	background-image: url("../image/house.jpg");
+	background-size: cover;
+	color:black;
+}
+.header{
+	color:black;
+	padding-top: 60px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	top: 60px;
+}
+.header2{
+	color: #666;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin-top: 10px;
+}
+.header-content{
+	margin-top:-110px;
+	
+	height: 400px;
+	background-color: white;
+	transform: skewY(8deg);
+	z-index: 2;
+}
+.content{
+	
+	transform: skewY(-13deg);
+}
+span{
+	padding: 0px 10px 0px 10px;
+}
+.get-started-btn{
+	margin-top:10px;
+	padding:10px 35px 10px 35px;
+	font-weight: bold;
+	font-size: 120%;
+	border: 2px solid tomato;
+	background-color: white;
+	color: tomato;
+	transition: 0.3s;
+	
+}
+.get-started-btn:hover{
+	background-color: tomato;
+	border-color: tomato;
+	color: white;
+}
+
+.main-footer{
+	padding-top:20px;
+}
