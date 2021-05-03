@@ -50,9 +50,19 @@
 
 <jsp:include page="header.jsp"></jsp:include>
 
-
+<div class="sub-banner">
+    <div class="container">
+        <div class="page-name">
+            <h1>Sell House</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span>/</span>Sell House</li>
+            </ul>
+        </div>
+    </div>
+</div>
 <!-- Banner start -->
-<div class="banner" id="banner">
+<%-- <div class="banner" id="banner">
     <div id="bannerCarousole" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item banner-max-height item-bg active">
@@ -119,7 +129,7 @@
         </a>
     </div>
 </div>
-
+ --%>
 <!-- Search Section start -->
 <%-- <div class="search-section ss2 search-area-2 bg-grea">
     

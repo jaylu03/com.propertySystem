@@ -58,6 +58,8 @@
 <script
 	src="<%=request.getContextPath()%>/userResources/js/ie-emulation-modes-warning.js"></script>
 
+<link rel="stylesheet" type="text/css"
+	href="<%=request.getContextPath()%>/userResources/css/override.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
     <script src="<%=request.getContextPath()%>/userResources/js/html5shiv.min.js"></script>
@@ -107,9 +109,10 @@
 								</div>
 							</div>
 							<!-- main slider carousel items -->
-							<div class="carousel-inner">
+							<div class="carousel-inner cusImageDisplay">
 								<c:forEach items="${propertyImageList}" var="i" varStatus="j">
 								<c:if test="${j.count eq 1}">
+								
 								<div class="item active carousel-item" data-slide-number="${j.count}">
 										<img
 											src="<%=request.getContextPath()%>/documents/propertyImage/${i.fileName}"
@@ -117,9 +120,9 @@
 									</div>
 								</c:if>
 								<c:if test="${j.count ne 1}">
-								<div class="item carousel-item" data-slide-number="${j.count}">
+								<div class="item carousel-item " data-slide-number="${j.count}">
 										<img
-										height="150"
+										
 											src="<%=request.getContextPath()%>/documents/propertyImage/${i.fileName}"
 											class="img-fluid" alt="slider-properties">
 									</div>
@@ -129,14 +132,15 @@
 							</div>
 							<!-- main slider carousel nav controls -->
 							<ul
-								class="carousel-indicators smail-properties list-inline nav nav-justified">
+								class="carousel-indicators smail-properties list-inline nav nav-justified cusSelectImageContainer">
 								<c:forEach items="${propertyImageList}" var="i" varStatus="j">
-									<li class="list-inline-item active"><a
+									<li class="list-inline-item active cusSelectImage"><a
 										id="carousel-selector-${j.count}" class="selected"
-										data-slide-to="${j.count}"
+										data-slide-to="${j.count-1}"
 										data-target="#propertiesDetailsSlider"> <img
 											src="<%=request.getContextPath()%>/documents/propertyImage/${i.fileName}"
-											class="img-fluid" alt="properties-small">
+											
+											class="img-fluid cusImage" alt="properties-small">
 									</a></li>
 								</c:forEach>
 

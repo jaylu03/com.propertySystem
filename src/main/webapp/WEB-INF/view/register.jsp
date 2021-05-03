@@ -51,9 +51,9 @@
 <div class="page_loader"></div>
 
 <!-- Contact section start -->
-<div class="contact-section">
-    <div class="container">
-        <div class="row login-box">
+<div class="contact-section" style="margin: 0; padding:0;">
+    <div class="container" style="transform:scale(0.8); ">
+        <div class="row login-box" style="box-shadow: 0px 0px 8px 0px grey">
             <div class="col-lg-6 align-self-center pad-0">
                 <div class="form-section clearfix">
                     <h3>Create an account</h3><br>

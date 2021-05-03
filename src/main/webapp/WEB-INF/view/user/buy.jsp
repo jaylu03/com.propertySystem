@@ -38,7 +38,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="<%=request.getContextPath()%>/userResources/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="<%=request.getContextPath()%>/userResources/js/ie-emulation-modes-warning.js"></script>
-
+	<link rel="stylesheet" type="text/css"  href="<%=request.getContextPath()%>/userResources/css/override.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="<%=request.getContextPath()%>/userResources/js/html5shiv.min.js"></script>
@@ -50,9 +50,20 @@
 
 <jsp:include page="header.jsp"></jsp:include>
 
+<div class="sub-banner">
+    <div class="container">
+        <div class="page-name">
+            <h1>Buy House</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span>/</span>Buy House</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <!-- Banner start -->
-<div class="banner" id="banner">
+<%-- <div class="banner" id="banner">
     <div id="bannerCarousole" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item banner-max-height item-bg active">
@@ -118,7 +129,7 @@
             </span>
         </a>
     </div>
-</div>
+</div> --%>
 
 <!-- Search Section start -->
 <div class="search-section ss2 search-area-2 bg-grea">
@@ -298,12 +309,12 @@
             <p></p>
         </div>
         <div class="slick-slider-area">
-            <div class="row slick-carousel" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+            <div class="row slick-carousel cusCardContainer" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
                 <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
                 
                 <c:forEach var="i" items="${propertyImageList}">
                 <div class="slick-slide-item" style="height: 500px;width: 350px">
-                    <div class="property-box-3" >
+                    <div class="property-box-3 cusCard" >
                         <div class="property-thumbnail">
                             <a href="propertiesDetails?id=${i.propertyVO.id}" class="property-img">
                                 <div class="tag-2">For Sell</div>
@@ -326,8 +337,8 @@
                         <div class="details">
                             <div class="top" >
                                 <h1 class="title">
-                                    <a href="propertiesDetails?id=${i.propertyVO.id}">${i.propertyVO.subCategoryVO.subCategoryName}</a>
-                                    <span><i class="fa fa-user" style="margin-right: 5px"></i>${i.propertyVO.ownerName}</span>
+                                    <a style="color: black" href="propertiesDetails?id=${i.propertyVO.id}">${i.propertyVO.subCategoryVO.subCategoryName}</a>
+                                    <span><i class="fa fa-user" style="margin-right: 5px; color: black;"></i>${i.propertyVO.ownerName}</span>
                                 </h1>
                                 <div class="location">
                                     <a href="propertiesDetails?id=${i.propertyVO.id}" tabindex="0">

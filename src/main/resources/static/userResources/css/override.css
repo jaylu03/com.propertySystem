@@ -1,0 +1,46 @@
+#banner{
+	height: 75vh;
+	overflow: hidden;
+}
+
+.cusCardContainer{
+	transform:scale(0.9)
+}
+
+.cusCard {
+	box-shadow: 0px 0px 8px 0px grey;
+}
+
+.cusImageDisplay {
+	 box-shadow: 0px 0px 8px 0px grey;	
+	 display: grid;
+	 place-content: center;
+	 margin: 20px;
+	 transform: scale(0.8)
+}
+
+.cusSelectImageContainer {
+	/*  border: 2px solid red; */
+	 display: flex;
+	 
+}
+
+.cusSelectImage{
+	/* border: 2px solid yellow; */
+	display: grid;
+	place-content: center;
+	margin: 20px;
+	padding: 20px;
+	
+}
+
+
+.cusImage{
+	box-shadow: 0px 0px 10px 0px grey;
+	transition: 0.3s;
+}
+
+.cusImage:hover{
+	transform: scale(1.05)
+}	
+

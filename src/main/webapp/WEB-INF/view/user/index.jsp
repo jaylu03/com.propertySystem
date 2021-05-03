@@ -44,6 +44,7 @@
     <script src="<%=request.getContextPath()%>/userResources/js/html5shiv.min.js"></script>
     <script src="<%=request.getContextPath()%>/userResources/js/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="<%=request.getContextPath()%>/userResources/css/override.css">
 </head>
 <body>
 <div class="page_loader"></div>
@@ -52,29 +53,30 @@
 
 
 <!-- Banner start -->
+<div class="bannerContainer">
 <div class="banner" id="banner">
     <div id="bannerCarousole" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item banner-max-height item-bg active">
-                <img class="d-block w-100 h-100" src="<%=request.getContextPath()%>/userResources/image/banner-4.jpg" alt="banner">
-                <!-- <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
+            <div class="carousel-item item-bg active">
+                <img class="d-block w-100 h-75" src="<%=request.getContextPath()%>/userResources/image/banner-4.jpg" alt="banner">
+                <div class="carousel-caption banner-slider-inner d-flex h-100 text-center" style="background-color: rgba(0,0,0,0.7); width: 100%">
                     <div class="carousel-content container">
                         <div class="text-center">
                             <div class="text-sections">
-                                <h3 class="text-uppercase">Your Dream Luxury Apartments</h3>
+                                <h3 class="text-uppercase">Welcome To jdkHouse Mart</h3>
                                 <p>Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
                             </div>
                             <div class="btn-sections">
-                                <a href="#" class="btn btn-lg btn-theme">Get Started Now</a>
-                                <a href="#" class="btn btn-lg btn-white-lg-outline">Learn More</a>
+                                <a href="loadBuy" class="btn btn-lg btn-theme">BUY HOUSE</a>
+                                <a href="loadSell" class="btn btn-lg btn-white-lg-outline">SELL HOUSE</a>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div> 
             </div>
             <div class="carousel-item banner-max-height item-bg">
-                <img class="d-block w-100 h-100" src="<%=request.getContextPath()%>/userResources/image/banner-3.jpg" alt="banner">
-                <!-- <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
+                <img class="d-block w-100 h-75" src="<%=request.getContextPath()%>/userResources/image/banner-3.jpg" alt="banner">
+                <div class="carousel-caption banner-slider-inner d-flex h-100 text-center" style="background-color: rgba(0,0,0,0.7); width: 100%">
                     <div class="carousel-content container">
                         <div class="text-center">
                            <div class="text-sections">
@@ -87,24 +89,24 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="carousel-item banner-max-height item-bg">
-                <img class="d-block w-100 h-100" src="<%=request.getContextPath()%>/userResources/image/banner-1.jpg" alt="banner">
-                <!-- <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
+                <img class="d-block w-100 h-75" src="<%=request.getContextPath()%>/userResources/image/banner-1.jpg" alt="banner">
+                <div class="carousel-caption banner-slider-inner d-flex h-100 text-center" style="background-color: rgba(0,0,0,0.7); width: 100%">
                     <div class="carousel-content container">
                         <div class="text-center">
                             <div class="btn-sections">
-                                <h3 class="text-uppercase">Sweet Home For Small Family</h3>
-                                <p>Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
+                                <h3 class="text-uppercase">Also Predict The House Prices</h3>
+                                <p>Allow us to introduce you our prediction system.</p>
                             </div>
                             <div class="btn-sections">
-                                <a href="#" class="btn btn-lg btn-theme">Get Started Now</a>
-                                <a href="#" class="btn btn-lg btn-white-lg-outline">Learn More</a>
+                                <a href="loadDetection" class="btn btn-lg btn-theme">Predict Now</a>
+                                	
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#bannerCarousole" role="button" data-slide="prev">
@@ -119,7 +121,7 @@
         </a>
     </div>
 </div>
-
+</div>
 <!-- Search Section start -->
 <!-- <div class="search-section ss2 search-area-2 bg-grea">
     <ul class="nav nav-tabs" id="carTab" role="tablist">

@@ -47,12 +47,12 @@
 </head>
 	<%@taglib prefix="h" uri="http://www.springframework.org/tags/form"%>
 	<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
-<body>
+<body style="overflow:hidden">
 <div class="page_loader"></div>
 
 <!-- Contact section start -->
 <div class="contact-section">
-    <div class="container">
+    <div class="container" style="transform: scale(0.8)">
         <div class="row login-box">
             <div class="col-lg-6 align-self-center pad-0">
                 <div class="form-section align-self-center">
